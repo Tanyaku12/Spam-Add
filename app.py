@@ -14,7 +14,7 @@ app = Flask(__name__)
 def load_tokens():
     try:
         # Owner: @senkucodex
-        with open("spam_ind.json", "r") as file:
+        with open("spam_id.json", "r") as file:
             data = json.load(file)
         tokens = [item["token"] for item in data]  
         return tokens
@@ -38,7 +38,7 @@ def send_friend_request(uid, token, results):
         "Content-Type": "application/x-www-form-urlencoded",
         "Content-Length": "16",
         "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 9; SM-N975F Build/PI)",
-        "Host": "clientbp.ggpolarbear.com",
+        "Host": "clientbp.ggblueshark.com",
         "Connection": "close",
         "Accept-Encoding": "gzip, deflate, br"
     }
